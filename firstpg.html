@@ -1,0 +1,53 @@
+<html>
+	<head>
+		<title>
+			STATIONARY SHOPPING
+		</title>
+		<link rel="stylesheet" type="text/css" href="homepg.css">
+		<script>
+			function show(){
+				var d = new Date();
+				document.getElementById("demo").innerHTML = d;
+			}
+			function mo() {
+				document.getElementById("btn1").style.color = "yellow";
+			}
+		</script>
+		<link href="nav.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body align="center">
+		<div id="nav">
+    	<ul>
+            <li><a href="firstpg.html">Home</a></li>
+            <li><a href="shopperregistr.html" class="current">GO TO REGISTRATION/LOGIN PAGE</a></li>
+                        
+            
+    	</ul>
+    </div> 
+		<div>
+			<h1 align="center">WELCOME TO YOUR OWN WORLD OF STATIONARY SHOPPING!!</h1>
+			<h3 align="center">WELCOME TO OUR SHOP!!</h3>
+		</div>  
+				
+				
+			<p align="center"><button id="btn" onclick="location.href='shopperregistr.html'" target="_blank">Click to continue!</button></p>
+			<p align="center"><button onclick="show()" id="btn1" onmouseover="mo()">Click to display date!</button></p>
+			<p id="demo" align="center"></p>
+			<table align="center">
+			<tr>
+				<td>
+			<div id="delete" align="center">
+				<form  align="center" name="fd" method="POST" action="del.php">Enter Mobile No to Delete Registered User:
+			<input type="tel" name="del"><br><br>
+
+			<input type="submit" name="submit" id="xyz" value="delete">
+			</form>
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+
+	</body>
+</html>

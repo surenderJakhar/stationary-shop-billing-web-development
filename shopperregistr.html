@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>
+			STATIONARY SHOPPING
+		</title>
+		<link rel="stylesheet" type="text/css" href="shopperregistr.css.css">
+		<script src="validate.js"></script>
+		
+
+	</head>
+	<body >
+		<h1 align="center">WELCOME TO YOUR OWN WORLD OF STATIONARY SHOPPING!!</h1>
+			<table align="center">
+				<tr>
+					<td>
+						<div>
+							<h2>PLEASE REGISTER YOURSELF</h2>			
+							<form action="register.php" name="register" onsubmit="return rvalidate()"  method="POST">
+								<table align="center">
+								<tr>
+								<td>NAME:</td><td><input type="text" name="name" placeholder="NAME" required><br></td></tr>
+								<tr><td>MOBILE NO.:</td><td><input type="tel" name="no" required><br></td></tr>
+								<tr><td>PASSWORD:</td><td><input type="password" name="pwd" required><br></td></tr>
+								<tr><td><hr></td><td><hr></td></tr><tr><td>
+								GENDER:</td><br><td><input type="radio" name="GENDER" value="female">FEMALE<br>
+								<input type="radio" name="GENDER" value="male" >MALE<br>
+								<input type="radio" name="GENDER" value="others" checked>OTHER<br></td></tr>
+								<tr><td>
+								CITY:</td><td><select>
+									<option selected>WARDHA</option>
+									<OPTION>NAGPUR</OPTION>
+									<OPTION>BHANDARA</OPTION>
+									<OPTION>AMRAVATI</OPTION>
+									<OPTION>MUMBAI</OPTION>
+									<OPTION>PUNE</OPTION>
+									<OPTION>AURANGABAD</OPTION>
+									<OPTION>NANDED</OPTION>
+									<OPTION>NASHIK</OPTION>
+									<OPTION>CHIKHALDARA</OPTION>
+								</select></td></tr><br><tr><td>
+								EMAIL:</td><td><input type="mail" name="mail" required></td></tr><br>
+								<tr colspan=2 align="center"><td><input type="submit" name="submit" value="REGISTER"></td></tr>
+								</table>
+							</form>
+						</div>
+					</td>
+					<td><h3>OR</h3></td>
+					<td>
+						<div>
+							<h2> LOGIN TO CONTINUE</h2>
+							<form action="login.php" name="login" onsubmit="return lvalidate()" method="POST"><table>
+								<tr><td>NAME:</td><td><input type="text" id="name" name="lname" required></td></tr><br>
+								<tr><td>MOBILE NO.:</td><td><input type="tel" id="no" name="lno" required></td></tr><br>
+								<tr><td>PASSWORD:</td><td><input type="password" id="pwd" name="lpwd" required></td></tr><br>
+								<tr colspan=2 align="center"><td><input type="submit" name="submit" value="LOGIN" ></td></tr></table>
+							</form>
+						</div>
+					</td>
+				</tr>
+			</table>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+body{
+	background-image: url(body.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+	color:orange;
+}
+button{
+		background-color: orange;
+		border-radius: 10px;
+		font-size: 20px;
+		padding:10px;
+}
+#demo{
+	background-color: white;
+	
+}
+#delete {
+    background-color: grey;
+    width: 300px;
+    border: 2px solid black;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 25px;
+   
+    color: white
+
+}
+
+input{
+	 border-radius: 10px;
+}
